@@ -9,4 +9,4 @@ namespace JDPI.Platform.Util.Providers
         public string DbUsername {get; set; }
         public string DbPwd {get; set;}
     }
-}
+}   

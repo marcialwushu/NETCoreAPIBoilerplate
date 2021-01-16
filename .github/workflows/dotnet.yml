@@ -1,11 +1,9 @@
-- name: dotnet-sonarscanner
-  uses: Secbyte/dotnet-sonarscanner@v2.3
-
+name:Sonarscannerdotnet
+  uses:dotnet-sonarscanner@v2.2
   with:
-    buildCommand: dotnet build .
-    testCommand: dotnet test .
-    projectKey: a-project-key
-    projectName: a-project-name
+    buildCommand:dotnet build 
+    projectKey:a-project-key
+    projectName:'projectname'
     sonarOrganisation: an-org
     beginArguments: >
         /d:sonar.verbose="true"
@@ -13,4 +11,4 @@
         /d:sonar.coverage.exclusions='"**/*.cs","**/*.md"'
   env:
     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-    ACTION_GITHUB_TOKEN: ${{ secrets.ACTION_GITHUB_TOKEN }}
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
