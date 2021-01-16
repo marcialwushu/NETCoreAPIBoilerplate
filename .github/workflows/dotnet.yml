@@ -1,5 +1,6 @@
-- name: Sonarscanner for dotnet
+- name: dotnet-sonarscanner
   uses: Secbyte/dotnet-sonarscanner@v2.3
+
   with:
     buildCommand: dotnet build .
     testCommand: dotnet test .
@@ -12,4 +13,4 @@
         /d:sonar.coverage.exclusions='"**/*.cs","**/*.md"'
   env:
     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-    ACTION_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    ACTION_GITHUB_TOKEN: ${{ secrets.ACTION_GITHUB_TOKEN }}
