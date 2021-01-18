@@ -1,4 +1,7 @@
 # NET Core API Boilerplate
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0944db518a724d79b484bd5068e5ccbe)](https://app.codacy.com/gh/marcialwushu/NETCoreAPIBoilerplate?utm_source=github.com&utm_medium=referral&utm_content=marcialwushu/NETCoreAPIBoilerplate&utm_campaign=Badge_Grade)
+
 :book: O projeto de estudo API com .NET Core servirá como um modelo padrão em prpjetos futuros 
 
 #### Configuração de máquina
