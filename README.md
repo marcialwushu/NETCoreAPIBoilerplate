@@ -1,5 +1,5 @@
 # NET Core API Boilerplate
-:book: O projeto de estudo API com .NET Core serviré como um modelo padrão em prpjetos futuros 
+:book: O projeto de estudo API com .NET Core servirá como um modelo padrão em prpjetos futuros 
 
 #### Configuração de máquina
 
