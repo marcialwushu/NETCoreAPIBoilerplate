@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/marcialwushu/NETCoreAPIBoilerplate)
+
 # NET Core API Boilerplate
 :book: O projeto de estudo API com .NET Core servirá como um modelo padrão em prpjetos futuros 
 
