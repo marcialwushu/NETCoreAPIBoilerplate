@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0944db518a724d79b484bd5068e5ccbe)](https://app.codacy.com/gh/marcialwushu/NETCoreAPIBoilerplate?utm_source=github.com&utm_medium=referral&utm_content=marcialwushu/NETCoreAPIBoilerplate&utm_campaign=Badge_Grade_Settings)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/marcialwushu/NETCoreAPIBoilerplate)
 
 # NET Core API Boilerplate
