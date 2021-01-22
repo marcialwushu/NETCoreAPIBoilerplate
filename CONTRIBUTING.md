@@ -1,54 +1,56 @@
-# Contributing to Transcriptase
-We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
+# Contribuindo para a Transcriptase
+Adoramos sua opinião! Queremos tornar a contribuição para este projeto o mais fácil e transparente possível, seja:
 
-- Reporting a bug
-- Discussing the current state of the code
-- Submitting a fix
-- Proposing new features
-- Becoming a maintainer
+- Relatando um bug
+- Discutir o estado atual do código
+- Enviando uma correção
+- Proposta de novos recursos
+- Tornando-se um mantenedor
 
-## We Develop with Github
-We use github to host code, to track issues and feature requests, as well as accept pull requests.
+## Desenvolvemos com Github
+Usamos o github para hospedar código, rastrear problemas e solicitações de recursos, bem como aceitar solicitações de pull request.
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
-Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
+## Nós usamos [Github Flow](https://guides.github.com/introduction/flow/index.html), Portanto, todas as alterações de código acontecem por meio de solicitações Pull Requests
+Solicitações Pull requests são a melhor maneira de propor mudanças na base de código (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). Acolhemos ativamente suas solicitações pull request:
 
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-6. Issue that pull request!
+1. Faça um fork do repo e crie seu branch a partir de `master`.
+2. Se você adicionou código que deve ser testado, adicione testes.
+3. Se você mudou as APIs, atualize a documentação.
+4. Certifique-se de que o conjunto de testes seja aprovado.
+5. Certifique-se de que o seu código seja executado.
+6. Emita essa solicitação pull request!
 
-## Any contributions you make will be under the MIT Software License
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+## Quaisquer contribuições que você fizer estarão sob a Licença de Software MIT
+Em suma, quando você envia alterações de código, seus envios são considerados sob o mesmo [MIT License](http://choosealicense.com/licenses/mit/) que cobre o projeto. Sinta-se à vontade para contatar os mantenedores se isso for uma preocupação.
 
-## Report bugs using Github's [issues](https://github.com/briandk/transcriptase-atom/issues)
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
+## Reportar bugs usando Github's [issues](https://github.com/marcialwushu/NETCoreAPIBoilerplate/issues)
+Usamos GitHub issues para rastrear bugs públicos. Reportar um bug até [abrindo um novo problema](); É tão fácil!
 
-## Write bug reports with detail, background, and sample code
-[This is an example](http://stackoverflow.com/q/12488905/180626) of a bug report I wrote, and I think it's not a bad model. Here's [another example from Craig Hockenberry](http://www.openradar.me/11905408), an app developer whom I greatly respect.
+## Escreva relatórios de bug com detalhes, histórico e código de amostra
+[Isto é um exemplo](http://stackoverflow.com/q/12488905/180626) de um relatório de bug que escrevi, e acho que não é um modelo ruim. Aqui está [outro exemplo de Craig Hockenberry](http://www.openradar.me/11905408), um desenvolvedor de aplicativos que respeito muito.
 
-**Great Bug Reports** tend to have:
+** Ótimos relatórios de bug ** tendem a ter:
 
-- A quick summary and/or background
-- Steps to reproduce
-  - Be specific!
-  - Give sample code if you can. [My stackoverflow question](http://stackoverflow.com/q/12488905/180626) includes sample code that *anyone* with a base R setup can run to reproduce what I was seeing
-- What you expected would happen
-- What actually happens
-- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
+- Um resumo rápido e/ou histórico
+- Passos para reproduzir
+  - Seja específico!
+  - Forneça um código de amostra, se puder. [Minha pergunta stackoverflow](http://stackoverflow.com/q/12488905/180626) inclui código de amostra que *qualquer pessoa* com uma configuração R de base pode executar para reproduzir o que eu estava vendo
+- O que você esperava que acontecesse
+- O que realmente acontece
+- Notas (possivelmente incluindo por que você acha que isso pode estar acontecendo ou coisas que você tentou que não funcionaram)
 
-People *love* thorough bug reports. I'm not even kidding.
+As pessoas *adoram* relatórios de bug completos. Eu nem estou brincando.
 
-## Use a Consistent Coding Style
-I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+## Use um estilo de codificação consistente
+Estou pegando emprestado de novo do [Facebook's Guidelines](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
 
-* 2 spaces for indentation rather than tabs
-* You can try running `npm run lint` for style unification
+* 2 espaços para recuo em vez de tabulações
+* Você pode tentar executar `npm run lint` para unificação de estilo por exemplo 
 
-## License
-By contributing, you agree that your contributions will be licensed under its MIT License.
+OBS: Para Linting em C# podemos usar: StyleCop, Sonar e Resharper
 
-## References
-This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+## Licença
+Ao contribuir, você concorda que suas contribuições serão licenciadas sob a Licença MIT.
+
+## Referências
+Este documento foi adaptado das diretrizes de contribuição de código aberto para [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
