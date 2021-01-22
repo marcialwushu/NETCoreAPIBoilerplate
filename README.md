@@ -29,6 +29,7 @@ Para executar esse projeto na sua máquina, é necessário ter instalado nela o 
   - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
   - [PostgresSQL (Chris Kolkman)](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres)
   - [Visual Studio Intellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+  - [Conventional Commits](https://github.com/andrewabest/Conventional)
 
 
 
