@@ -30,6 +30,10 @@ Para executar esse projeto na sua máquina, é necessário ter instalado nela o 
   - [PostgresSQL (Chris Kolkman)](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres)
   - [Visual Studio Intellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
   - [Conventional Commits](https://github.com/andrewabest/Conventional)
+  - [C# FixFormat - Fix format of usings /indents/braces/empty lines](https://marketplace.visualstudio.com/items?itemName=Leopotam.csharpfixformat)
+  - [MSBuild Project Tools](https://marketplace.visualstudio.com/items?itemName=tintoy.msbuild-project-tools)
+  - [VSCode Solution Explorer](https://marketplace.visualstudio.com/items?itemName=fernandoescolar.vscode-solution-explorer)
+  - [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
 
 
 
