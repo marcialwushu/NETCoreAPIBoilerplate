@@ -1,4 +1,4 @@
-# Contribuindo para a Transcriptase
+# Contribuindo com o Boilerplate
 Adoramos sua opinião! Queremos tornar a contribuição para este projeto o mais fácil e transparente possível, seja:
 
 - Relatando um bug
