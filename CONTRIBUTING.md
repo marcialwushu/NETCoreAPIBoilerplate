@@ -29,7 +29,7 @@ Usamos GitHub issues para rastrear bugs públicos. Reportar um bug até [abrindo
 ## Escreva relatórios de bug com detalhes, histórico e código de amostra
 [Isto é um exemplo](http://stackoverflow.com/q/12488905/180626) de um relatório de bug que escrevi, e acho que não é um modelo ruim. Aqui está [outro exemplo de Craig Hockenberry](http://www.openradar.me/11905408), um desenvolvedor de aplicativos que respeito muito.
 
-** Ótimos relatórios de bug ** tendem a ter:
+**Ótimos relatórios de bug** tendem a ter:
 
 - Um resumo rápido e/ou histórico
 - Passos para reproduzir
