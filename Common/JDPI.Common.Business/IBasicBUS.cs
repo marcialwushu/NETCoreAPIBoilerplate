@@ -6,6 +6,6 @@ namespace JDPI.Common.Business
 {
     public interface IBasicBUS<TCollection> where TCollection : IEntity
     {
-         ICollection GetById(string id);
+         
     }
 }
