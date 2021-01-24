@@ -3,6 +3,41 @@ info:
   title: JDPI.Application.API
   version: v1
 paths:
+  "/User":
+    get:
+      tags:
+      - User
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/Usuario"
+            application/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/Usuario"
+            text/json:
+              schema:
+                type: array
+                items:
+                  "$ref": "#/components/schemas/Usuario"
+        '404':
+          description: Not Found
+          content:
+            text/plain:
+              schema:
+                "$ref": "#/components/schemas/ProblemDetails"
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/ProblemDetails"
+            text/json:
+              schema:
+                "$ref": "#/components/schemas/ProblemDetails"
   "/WeatherForecast":
     get:
       tags:
@@ -25,9 +60,45 @@ paths:
               schema:
                 type: array
                 items:
-                  "$ref": "#/components/schemas/WeatherForecast" 
+                  "$ref": "#/components/schemas/WeatherForecast"
 components:
   schemas:
+    Usuario:
+      type: object
+      properties:
+        id:
+          type: string
+          nullable: true
+        userName:
+          type: string
+          nullable: true
+        password:
+          type: string
+          nullable: true
+        crationDate:
+          type: string
+          format: date-time
+      additionalProperties: false
+    ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
     WeatherForecast:
       type: object
       properties:
