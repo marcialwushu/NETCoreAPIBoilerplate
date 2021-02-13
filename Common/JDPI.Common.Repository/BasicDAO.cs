@@ -66,5 +66,22 @@ namespace JDPI.Common.Repository
         {
             return Collection.AsQueryable();
         }
+
+        public virtual void SaveAll(IList<TCollection> models) 
+        {
+            Collection.InsertMany(models);
+        }
+
+        public virtual void Save(TCollection model) 
+        {
+            Collection.InsertOne(model);
+        }
+
+        public virtual void Update(TCollection model) 
+        {
+           var filter = Builders<BsonDocument>.Filter.Eq("_id", model);
+           var update = Builders<BsonDocument>.Update.Set("_id", model);
+           Collection.UpdateOne(filter, update);
+        }
     }
 }
