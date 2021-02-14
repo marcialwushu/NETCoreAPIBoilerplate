@@ -21,39 +21,37 @@ namespace JDPI.Platform.Business
         
         public List<User> GetAll()
         {
-            //return _userDAO.GetAll();
-            throw new System.NotImplementedException();
+            return _userDAO.GetAll();            
         }
 
         public User GetById(string id)
         {
-            //return _userDAO.GetById(id);
-            throw new System.NotImplementedException();
+            return _userDAO.GetById(id);
         }
 
         public User GetByPropertyName(string param, string property)
         {
-            throw new System.NotImplementedException();
+            return _userDAO.GetByPropertyName(param, property);
         }
 
         public System.Collections.Generic.List<User> GetListById(string id)
         {
-            throw new System.NotImplementedException();
+            return _userDAO.GetListById(id);
         }
 
         public System.Collections.Generic.List<User> GetListByPropertyName(string param, string property)
         {
-            throw new System.NotImplementedException();
+            return _userDAO.GetListByPropertyName(param, property);
         }
 
         public void Save(User model)
         {
-            throw new System.NotImplementedException();
+             _userDAO.Save(model);
         }
 
         public void Update(User model)
         {
-            throw new System.NotImplementedException();
+            _userDAO.Update(model);
         }
     }
 }

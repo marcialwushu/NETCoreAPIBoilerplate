@@ -1,5 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\JDPI.Platform.Business\JDPI.Platform.Business.csproj" />
+    <ProjectReference Include="..\JDPI.Platform.Entity\JDPI.Platform.Entity.csproj" />
+    <ProjectReference Include="..\..\Common\JDPI.Common.Domain\JDPI.Common.Domain.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
