@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using JDPI.Common.Util;
 using JDPI.Platform.Util.Providers;
+using JDPI.Common.Util.Providers;
 
 namespace JDPI.Application.API
 {

@@ -8,4 +8,11 @@
     <PackageReference Include="MongoDB.Driver" Version="2.11.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\JDPI.Common.Repository\JDPI.Common.Repository.csproj" />
+    <ProjectReference Include="..\..\Common\JDPI.Common.Domain\JDPI.Common.Domain.csproj" />
+    <ProjectReference Include="..\..\Common\JDPI.Common.Util\JDPI.Common.Util.csproj" />
+    <ProjectReference Include="..\JDPI.Platform.Entity\JDPI.Platform.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

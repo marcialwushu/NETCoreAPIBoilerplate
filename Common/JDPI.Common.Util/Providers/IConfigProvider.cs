@@ -1,4 +1,4 @@
-namespace JDPI.Common.Util
+namespace JDPI.Common.Util.Providers
 {
     public interface IConfigProvider
     {

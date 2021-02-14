@@ -1,4 +1,5 @@
 using JDPI.Common.Util;
+using JDPI.Common.Util.Providers;
 using System;
 using System.Configuration;
 
