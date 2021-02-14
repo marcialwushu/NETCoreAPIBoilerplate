@@ -13,6 +13,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Common\JDPI.Common.Util\JDPI.Common.Util.csproj" />
     <ProjectReference Include="..\..\Platform\JDPI.Platform.Util\JDPI.Platform.Util.csproj" />
+    <ProjectReference Include="..\..\Platform\JDPI.Platform.Service\JDPI.Platform.Service.csproj" />
+    <ProjectReference Include="..\..\Platform\JDPI.Platform.Entity\JDPI.Platform.Entity.csproj" />
   </ItemGroup>
 
 </Project>
