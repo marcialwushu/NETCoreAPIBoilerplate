@@ -9,6 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 using JDPI.Common.Util.Providers;
+using JDPI.Platform.Entity;
 
 namespace JDPI.Common.Repository
 {
@@ -90,7 +91,7 @@ namespace JDPI.Common.Repository
 
         public virtual void Update(TCollection model)
         {
-            //Collection.FindOneAndUpdate(model,GetById("_id"));
+            Collection.ReplaceOne(FilterById(Convert.ToString(BsonTypeMapper.MapToDotNetValue(model.ToBsonDocument().GetElement("_id").Value))), model);
         }
 
         public virtual void Remove(string id)
@@ -115,7 +116,46 @@ namespace JDPI.Common.Repository
 			return list;
 		}
 
-		protected FilterDefinition<TCollection> FilterByProperty(string param, string property)
+        public virtual List<TCollection> GetListByParams(string param, string property)
+        {
+            return Collection.Find(FilterByProperty(param, property)).ToList();
+        }
+
+        /// <summary>
+        /// (Filter & Linq) 
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public virtual User FindElementInCollection(string userName)
+        {
+            var elementFilter = Builders<User>.Filter
+                .ElemMatch(z => z.Users, a => a.UserName == userName);
+
+            var element = Db.GetCollection<User>("User")
+                .Find(elementFilter)
+                .FirstOrDefault();
+            return element.Users.FirstOrDefault(a => a.UserName == userName);
+        }
+
+        /// <summary>
+        /// (Aggregation)
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public virtual User FindElementInCollection2(string userName)
+        {
+            var elementFilter = Builders<User>.Filter
+                .ElemMatch(z => z.Users, a => a.UserName == userName);
+
+            return Db.GetCollection<User>("user").Aggregate()
+                .Match(elementFilter)
+                .Project<User>(
+                    Builders<User>.Projection.Expression<User>(z =>
+                        z.Users.FirstOrDefault(a => a.UserName == userName)))
+                .FirstOrDefault();
+        }
+
+        protected FilterDefinition<TCollection> FilterByProperty(string param, string property)
 		{
 			ParameterExpression expressionParameter = Expression.Parameter(typeof(TCollection), "t");
 

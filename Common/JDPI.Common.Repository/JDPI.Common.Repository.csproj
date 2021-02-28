@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
+    <ProjectReference Include="..\..\Platform\JDPI.Platform.Entity\JDPI.Platform.Entity.csproj" />
     <ProjectReference Include="..\JDPI.Common.Domain\JDPI.Common.Domain.csproj" />
     <ProjectReference Include="..\JDPI.Common.Util\JDPI.Common.Util.csproj" />
   </ItemGroup>

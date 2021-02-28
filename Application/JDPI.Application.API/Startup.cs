@@ -15,6 +15,13 @@ using Microsoft.OpenApi.Models;
 using JDPI.Common.Util;
 using JDPI.Platform.Util.Providers;
 using JDPI.Common.Util.Providers;
+using JDPI.Platform.Service.Interfaces;
+using JDPI.Platform.Service;
+using JDPI.Platform.Business.Interfaces;
+using JDPI.Platform.Entity;
+using JDPI.Platform.Business;
+using JDPI.Platform.Repository.Interfaces;
+using JDPI.Platform.Repository;
 
 namespace JDPI.Application.API
 {
@@ -30,6 +37,9 @@ namespace JDPI.Application.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserBUS<User>, UserBUS>();
+            services.AddScoped<IUserDAO<User>, UserDAO<User>>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

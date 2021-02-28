@@ -4,6 +4,7 @@ using JDPI.Application.API.Code;
 using JDPI.Application.API.Models;
 using JDPI.Platform.Entity.DTOs;
 using JDPI.Platform.Service;
+using JDPI.Platform.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,9 +15,9 @@ namespace JDPI.Application.API.Controllers
     [Route("api")]
     public class UserController : ControllerBase
     {
-        private readonly UserService _userService;
+        IUserService _userService;
 
-        public UserController(UserService userService)
+        public UserController(IUserService userService)
         {
             _userService = userService;
         }
